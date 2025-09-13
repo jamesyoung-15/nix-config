@@ -30,6 +30,9 @@
 
   # programs.nix-ld.enable = true;
 
+  # force password prompt to be in terminal: https://github.com/NixOS/nixpkgs/issues/24311
+  programs.ssh.askPassword = "";
+
   # System-wide packages
   environment.systemPackages = with pkgs; [
     # essential cli tools
