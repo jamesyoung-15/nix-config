@@ -44,7 +44,7 @@
           system = "x86_64-linux";
           modules = [
             ./hosts/framework-13
-            nixos-hardware.nixOsModules.framework-13-7040-amd
+            nixos-hardware.nixosModules.framework-13-7040-amd
 
             home-manager.nixosModules.home-manager {
               home-manager.useGlobalPkgs = true;
