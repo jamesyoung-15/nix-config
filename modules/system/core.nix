@@ -39,6 +39,7 @@
     git
     curl
     wget
+    vim
     tlrc
     tmux
     screen
