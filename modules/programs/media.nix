@@ -14,6 +14,8 @@
     libresprite
     kdePackages.kdenlive
     glaxnimate
+
+    # recording software
     obs-studio
     (pkgs.wrapOBS {
       plugins = with pkgs.obs-studio-plugins; [
@@ -22,6 +24,7 @@
         obs-pipewire-audio-capture
       ];
     })
+    snapshot
 
     # media tools
     feh

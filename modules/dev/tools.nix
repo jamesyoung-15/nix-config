@@ -11,12 +11,7 @@
     localstack # local aws stack
     ollama
 
-    # embedded
-    pkgs.arduino
-    pkgs.platformio
-
     # db
     sqlite
-    dbeaver-bin
   ];
 }
