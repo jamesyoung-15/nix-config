@@ -14,5 +14,8 @@ pkgs.mkShell {
   env.LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath [
     pkgs.libz
     pkgs.stdenv.cc.cc.lib
+    pkgs.libGL
+    pkgs.glib
+    pkgs.libglvnd
   ];
 }
