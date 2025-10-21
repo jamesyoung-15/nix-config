@@ -42,6 +42,9 @@
     nodePackages_latest.nodejs
     nodePackages.serve
 
+    # php
+    php
+
     # iac
     (pkgs.terraform.withPlugins (p: [
       p.archive
