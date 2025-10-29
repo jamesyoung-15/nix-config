@@ -1,32 +1,51 @@
-with import <nixpkgs> { };
-mkShell {
-  nativeBuildInputs = [
-    pkg-config
-    cmake
-  ];
-  buildInputs = [
-    boost
-    # builder
-    gnumake
-    cmake
-    bear
+{ pkgs ? import <nixpkgs> {} }:
 
-    # debugger
+pkgs.stdenv.mkDerivation {
+  name = "c-cpp-dev-shell";
+  nativeBuildInputs = with pkgs; [
+    # Compilers and toolchains
+    gcc
+    clang
+    clang-tools            # clangd, clang-format, clang-tidy, scan-build, etc.
     lldb
     gdb
+    lcov                   # coverage for gcov
 
-    # fix headers not found
-    clang-tools
+    # Build systems and package managers
+    cmake
+    ninja
+    meson
+    pkg-config
 
-    # other tools
+    # Static analysis and sanitizers
     cppcheck
-    libllvm
-    valgrincd
-    ccls
-    gdb
-    doxygen
+    include-what-you-use
+    valgrind
 
-    # libs
+    # Project helpers
+    ccache
+    gnumake
+    git
+
+    # Documentation and testing
+    doxygen
+    graphviz
+    gcovr
+    catch2
+    gtest
+
+    # Misc utilities commonly handy
+    ripgrep
+    fd
+    tree
+  ];
+  buildInputs = with pkgs; [
+    # Libraries
+    boost
+    elfutils
+    ncurses
+    openssl
+    zlib
     glm
     SDL2
     SDL2_gfx
