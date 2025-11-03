@@ -30,6 +30,7 @@
       cdpractice = "cd ~/Dev/Practice";
       cdwork = "cd ~/Work";
       nixpyshell = "nix-shell ~/Nix-Config/nix-shells/python.nix";
+      nixcppshell = "nix-shell ~/Nix-Config/nix-shells/c-cpp.nix";
       # fix weird issue with nixpkgs python version defaulting to 3.12
       python = "python3.13";
       python3 = "python3.13";
