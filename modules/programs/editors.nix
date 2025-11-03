@@ -11,6 +11,6 @@
     # office
     libreoffice
 
-    vscode
+    vscode.fhs
   ];
 }
