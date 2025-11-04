@@ -77,6 +77,35 @@
   hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
   # services.blueman.enable = true; # only needed for WM or DE without bluetooth manager
 
+  # AMD GPU
+  # hardware.graphics = {
+  #   enable = true;
+  #   enable32Bit = true;
+  #   extraPackages = with pkgs; [ 
+  #     rocmPackages.clr.icd # rocm opencl driver
+  #     clinfo # opencl info tool
+  #   ];
+  # };
+
+  # Enable OpenGL support
+  hardware.opengl.enable = true;
+
+  # create a linked path for rocm libraries that might be hardcoded
+  # systemd.tmpfiles.rules = 
+  # let
+  #   rocmEnv = pkgs.symlinkJoin {
+  #     name = "rocm-combined";
+  #     paths = with pkgs.rocmPackages; [
+  #       rocblas
+  #       hipblas
+  #       clr
+  #     ];
+  #   };
+  # in [
+  #   "L+    /opt/rocm   -    -    -     -    ${rocmEnv}"
+  # ];
+
+
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
   # on your system were taken. It‘s perfectly fine and recommended to leave

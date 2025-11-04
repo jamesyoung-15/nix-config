@@ -75,6 +75,9 @@
   # List services that you want to enable:
   services.flatpak.enable = true;
 
+  # enable openGL
+  hardware.opengl.enable = true;
+
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
   # networking.firewall.allowedUDPPorts = [ ... ];
