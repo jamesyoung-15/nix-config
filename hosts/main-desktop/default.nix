@@ -78,14 +78,14 @@
   # services.blueman.enable = true; # only needed for WM or DE without bluetooth manager
 
   # AMD GPU
-  # hardware.graphics = {
-  #   enable = true;
-  #   enable32Bit = true;
-  #   extraPackages = with pkgs; [ 
-  #     rocmPackages.clr.icd # rocm opencl driver
-  #     clinfo # opencl info tool
-  #   ];
-  # };
+  hardware.graphics = {
+    enable = true;
+    enable32Bit = true;
+    extraPackages = with pkgs; [ 
+      rocmPackages.clr.icd # rocm opencl driver
+      clinfo # opencl info tool
+    ];
+  };
 
   # Enable OpenGL support
   hardware.opengl.enable = true;
