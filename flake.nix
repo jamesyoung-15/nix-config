@@ -29,7 +29,8 @@
           modules = [
             ./hosts/main-desktop
 
-            home-manager.nixosModules.home-manager {
+            home-manager.nixosModules.home-manager
+            {
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
               home-manager.users.jamesyoung = ./home-manager/home.nix;
@@ -46,7 +47,8 @@
             ./hosts/framework-13
             nixos-hardware.nixosModules.framework-13-7040-amd
 
-            home-manager.nixosModules.home-manager {
+            home-manager.nixosModules.home-manager
+            {
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
               home-manager.users.jamesyoung = ./home-manager/home.nix;
