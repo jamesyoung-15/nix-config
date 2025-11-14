@@ -13,5 +13,6 @@
     postman
     insomnia
     tesseract
+    clinfo
   ];
 }

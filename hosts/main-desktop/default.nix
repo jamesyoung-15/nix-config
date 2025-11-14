@@ -39,6 +39,8 @@
       "dialout"
       "libvirtd"
       "openrazer"
+      "video"
+      "render"
     ];
     packages = with pkgs; [ ];
   };
@@ -81,30 +83,27 @@
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
-    extraPackages = with pkgs; [ 
-      rocmPackages.clr.icd # rocm opencl driver
-      clinfo # opencl info tool
+    extraPackages = with pkgs; [
+      rocmPackages.clr
+      rocmPackages.clr.icd
     ];
   };
 
-  # Enable OpenGL support
-  hardware.opengl.enable = true;
-
   # create a linked path for rocm libraries that might be hardcoded
-  # systemd.tmpfiles.rules = 
-  # let
-  #   rocmEnv = pkgs.symlinkJoin {
-  #     name = "rocm-combined";
-  #     paths = with pkgs.rocmPackages; [
-  #       rocblas
-  #       hipblas
-  #       clr
-  #     ];
-  #   };
-  # in [
-  #   "L+    /opt/rocm   -    -    -     -    ${rocmEnv}"
-  # ];
-
+  systemd.tmpfiles.rules =
+    let
+      rocmEnv = pkgs.symlinkJoin {
+        name = "rocm-combined";
+        paths = with pkgs.rocmPackages; [
+          rocblas
+          hipblas
+          clr
+        ];
+      };
+    in
+    [
+      "L+    /opt/rocm   -    -    -     -    ${rocmEnv}"
+    ];
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
