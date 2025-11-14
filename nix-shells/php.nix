@@ -1,4 +1,6 @@
-{ pkgs ? import <nixpkgs> { } }:
+{
+  pkgs ? import <nixpkgs> { },
+}:
 let
   phpEnv = pkgs.php.buildEnv {
     extensions = { enabled, all }: enabled ++ (with all; [ xsl ]);

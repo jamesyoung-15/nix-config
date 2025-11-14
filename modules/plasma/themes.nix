@@ -20,7 +20,12 @@
     # cursors, icons, etc.
     pkgs.catppuccin-cursors
     pkgs.papirus-icon-theme
-    (pkgs.tela-circle-icon-theme.override { colorVariants = ["dracula" "purple"]; })
+    (pkgs.tela-circle-icon-theme.override {
+      colorVariants = [
+        "dracula"
+        "purple"
+      ];
+    })
     pkgs.dracula-icon-theme
     # (pkgs.whitesur-icon-theme.override { themeVariants = ["purple" "nord"];})
     # paper-icon-theme

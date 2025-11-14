@@ -37,7 +37,6 @@
     black
     uv
 
-
     # node
     nodePackages_latest.nodejs
     nodePackages.serve

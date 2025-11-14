@@ -1,4 +1,6 @@
-{ pkgs ? import <nixpkgs> {} }:
+{
+  pkgs ? import <nixpkgs> { },
+}:
 
 pkgs.stdenv.mkDerivation {
   name = "c-cpp-dev-shell";
@@ -6,10 +8,10 @@ pkgs.stdenv.mkDerivation {
     # Compilers and toolchains
     gcc
     clang
-    clang-tools            # clangd, clang-format, clang-tidy, scan-build, etc.
+    clang-tools # clangd, clang-format, clang-tidy, scan-build, etc.
     lldb
     gdb
-    lcov                   # coverage for gcov
+    lcov # coverage for gcov
 
     # Build systems and package managers
     cmake

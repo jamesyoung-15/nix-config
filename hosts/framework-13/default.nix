@@ -75,11 +75,11 @@
   # List services that you want to enable:
   services.flatpak.enable = true;
 
-    # AMD GPU
+  # AMD GPU
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
-    extraPackages = with pkgs; [ 
+    extraPackages = with pkgs; [
       rocmPackages.clr.icd # rocm opencl driver
       clinfo # opencl info tool
     ];
