@@ -26,7 +26,7 @@
     bitwarden-desktop
     syncthing
     pkgs.mediawriter
-    pkgs.rpi-imager
+    # pkgs.rpi-imager
     pkgs.krename
     rustdesk
     scrcpy
