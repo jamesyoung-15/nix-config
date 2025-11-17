@@ -52,6 +52,10 @@
       "kvm"
       "dialout"
       "libvirtd"
+      "input"
+      "video"
+      "render"
+      "input"
       "openrazer"
     ];
     packages = with pkgs; [ ];
