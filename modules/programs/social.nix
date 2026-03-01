@@ -1,8 +1,7 @@
 { config, pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
-    zoom-us
-    slack
+    # slack
     discord
     signal-desktop-bin
   ];
