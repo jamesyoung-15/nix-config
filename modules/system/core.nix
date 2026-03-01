@@ -40,6 +40,7 @@
   environment.systemPackages = with pkgs; [
     # essential cli tools
     git
+    lazygit
     curl
     wget
     vim
@@ -49,6 +50,9 @@
     tree
     direnv
     parallel
+    ripgrep
+    fd
+    fzf
 
     # file utils
     killall
