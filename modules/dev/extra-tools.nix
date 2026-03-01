@@ -10,7 +10,7 @@
     mongodb-compass
 
     # other
-    postman
+    bruno
     insomnia
     tesseract
     clinfo
