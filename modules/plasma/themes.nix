@@ -14,7 +14,6 @@
     })
     pkgs.catppuccin-kvantum
     pkgs.dracula-theme
-    pkgs.lightly-qt
     kdePackages.sddm-kcm # sddm theme
 
     # cursors, icons, etc.

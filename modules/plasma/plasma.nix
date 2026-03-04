@@ -17,7 +17,7 @@
     type = "fcitx5";
     fcitx5.addons = with pkgs; [
       kdePackages.fcitx5-qt # fcitx5-gtk
-      fcitx5-chinese-addons # table input method support
+      kdePackages.fcitx5-chinese-addons # table input method support
       fcitx5-nord # a color theme
     ];
   };

@@ -46,26 +46,26 @@
 
     # iac
     (pkgs.terraform.withPlugins (p: [
-      p.archive
-      p.aws
-      p.hcloud
-      p.azurerm
-      p.google
-      p.kubernetes
-      p.helm
-      p.docker
-      p.cloudflare
-      p.github
-      p.grafana
-      p.proxmox
-      p.random
-      p.local
-      p.null
-      p.time
-      p.http
-      p.external
-      p.vault
-      p.tls
+      p.hashicorp_archive
+      p.hashicorp_aws
+      p.hetznercloud_hcloud
+      p.hashicorp_azurerm
+      p.hashicorp_google
+      p.hashicorp_kubernetes
+      p.hashicorp_helm
+      p.kreuzwerker_docker
+      p.cloudflare_cloudflare
+      p.integrations_github
+      p.grafana_grafana
+      p.telmate_proxmox
+      p.hashicorp_random
+      p.hashicorp_local
+      p.hashicorp_null
+      p.hashicorp_time
+      p.hashicorp_http
+      p.hashicorp_external
+      p.hashicorp_vault
+      p.hashicorp_tls
     ]))
     terraform-ls
     vault-bin
