@@ -59,22 +59,6 @@
             }
           ];
         };
-        vm-test = nixpkgs.lib.nixosSystem {
-          system = "x86_64-linux";
-          modules = [
-            ./hosts/vm-test
-            home-manager.nixosModules.home-manager
-            {
-              home-manager.useGlobalPkgs = true;
-              home-manager.useUserPackages = true;
-              home-manager.users.james = ./home-manager/home.nix;
-
-              home-manager.extraSpecialArgs = {
-                username = "james";
-              };
-            }
-          ];
-        };
       };
     };
 }
