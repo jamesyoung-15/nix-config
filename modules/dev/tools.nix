@@ -10,6 +10,7 @@
     act # local github actions
     localstack # local aws stack
     ollama
+    pre-commit
 
     # db
     sqlite
