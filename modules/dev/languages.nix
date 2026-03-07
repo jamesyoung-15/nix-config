@@ -71,6 +71,7 @@
     vault-bin
     pulumi-bin
     opentofu
+    ansible
 
     # others
     nixfmt-rfc-style
