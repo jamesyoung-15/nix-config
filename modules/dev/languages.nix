@@ -72,6 +72,7 @@
     pulumi-bin
     opentofu
     ansible
+    ansible-lint
 
     # others
     nixfmt-rfc-style
@@ -79,5 +80,7 @@
     nix-tree
     texliveFull
     pandoc
+    yamlfmt
+    prettier
   ];
 }
