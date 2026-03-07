@@ -8,3 +8,4 @@ flatpak install flathub org.qbittorrent.qBittorrent -y
 flatpak install flathub org.raspberrypi.rpi-imager -y
 flatpak install flathub org.ryujinx.Ryujinx -y
 flatpak install flathub org.upscayl.Upscayl -y
+flatpak install flathub rs.ruffle.Ruffle -y
