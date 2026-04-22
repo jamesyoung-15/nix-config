@@ -9,9 +9,12 @@
     dbeaver-bin
     mongodb-compass
 
+    # llm tools
+    opencode
+    # claude-code
+
     # other
-    bruno
-    insomnia
+    # bruno # using flatpak until 3.2 is available
     tesseract
     clinfo
   ];
