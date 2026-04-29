@@ -17,5 +17,6 @@
     # bruno # using flatpak until 3.2 is available
     tesseract
     clinfo
+    cloudflared
   ];
 }
