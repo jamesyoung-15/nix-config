@@ -31,7 +31,7 @@
     "flakes"
   ];
 
-  # programs.nix-ld.enable = true;
+  programs.nix-ld.enable = true;
 
   # force password prompt to be in terminal: https://github.com/NixOS/nixpkgs/issues/24311
   programs.ssh.askPassword = "";
