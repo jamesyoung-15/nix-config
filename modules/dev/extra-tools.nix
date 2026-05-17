@@ -7,7 +7,6 @@
 
     # db
     dbeaver-bin
-    mongodb-compass
 
     # llm tools
     opencode
