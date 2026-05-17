@@ -42,7 +42,9 @@
       "render"
       "input"
     ];
-    packages = with pkgs; [ ];
+    packages = with pkgs; [ 
+      teamviewer
+     ];
   };
 
   # Allow unfree packages
@@ -108,6 +110,9 @@
     [
       "L+    /opt/rocm   -    -    -     -    ${rocmEnv}"
     ];
+
+  # temp add teamviewer
+  services.teamviewer.enable = true;
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
