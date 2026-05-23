@@ -19,6 +19,7 @@
     # phoronix-test-suite
 
     # gui tools
+    kitty
     wireshark
     kdePackages.kdeconnect-kde
     gnome-disk-utility
