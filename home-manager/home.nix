@@ -30,7 +30,6 @@
       cddev = "cd ~/Dev";
       cdprojects = "cd ~/Dev/Projects";
       cdpractice = "cd ~/Dev/Practice";
-      cdwork = "cd ~/Work";
       nixpyshell = "nix-shell ~/Nix-Config/nix-shells/python.nix";
       nixcppshell = "nix-shell ~/Nix-Config/nix-shells/c-cpp.nix";
     };
