@@ -4,7 +4,7 @@
   # bash setup
   programs.bash = {
     interactiveShellInit = ''
-      neofetch
+      fastfetch
       eval "$(starship init bash)"
     '';
     shellAliases = {
@@ -15,7 +15,6 @@
 
   environment.systemPackages = with pkgs; [
     starship
-    neofetch # todo: replace with fastfetch
     fastfetch
   ];
 
