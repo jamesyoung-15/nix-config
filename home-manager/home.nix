@@ -27,11 +27,10 @@
   programs.bash = {
     enable = true;
     shellAliases = {
-      cddev = "cd ~/Dev";
-      cdprojects = "cd ~/Dev/Projects";
-      cdpractice = "cd ~/Dev/Practice";
-      nixpyshell = "nix-shell ~/Nix-Config/nix-shells/python.nix";
-      nixcppshell = "nix-shell ~/Nix-Config/nix-shells/c-cpp.nix";
+      cddev = "cd ~/dev";
+      cdprojects = "cd ~/dev/projects";
+      cdpractice = "cd ~/dev/practice";
+      cdquick = "cd ~/dev/quick";
     };
   };
 
