@@ -4,6 +4,9 @@
   # bash setup
   programs.bash = {
     interactiveShellInit = ''
+      if [[ "$TERM" == "xterm-kitty" ]]; then
+          alias ssh='kitty +kitten ssh'
+      fi
       fastfetch
       eval "$(starship init bash)"
     '';
