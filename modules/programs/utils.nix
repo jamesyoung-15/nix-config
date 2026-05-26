@@ -10,6 +10,7 @@
     rclone
     nnn
     ydotool
+    android-tools
 
     # benchmarking tools
     speedtest-cli
