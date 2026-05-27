@@ -10,7 +10,7 @@
 
     # llm tools
     opencode
-    # claude-code
+    claude-code
 
     # other
     # bruno # using flatpak until 3.2 is available
