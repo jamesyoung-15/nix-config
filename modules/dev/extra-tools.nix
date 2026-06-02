@@ -13,7 +13,7 @@
     claude-code
 
     # other
-    # bruno # using flatpak until 3.2 is available
+    bruno
     tesseract
     clinfo
     cloudflared
