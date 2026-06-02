@@ -86,6 +86,7 @@
   # services.blueman.enable = true; # only needed for WM or DE without bluetooth manager
 
   # AMD GPU
+  nixpkgs.config.rocmSupport = true;
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
