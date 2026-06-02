@@ -90,7 +90,10 @@
   };
 
   # displaylink drivers
-  services.xserver.videoDrivers = [ "displaylink" "modesetting" ];
+  services.xserver.videoDrivers = [
+    "displaylink"
+    "modesetting"
+  ];
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];

@@ -42,9 +42,9 @@
       "render"
       "input"
     ];
-    packages = with pkgs; [ 
+    packages = with pkgs; [
       teamviewer
-     ];
+    ];
   };
 
   # Allow unfree packages
