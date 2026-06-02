@@ -25,7 +25,7 @@
     kdePackages.kdeconnect-kde
     gnome-disk-utility
     piper
-    bitwarden-desktop
+    # bitwarden-desktop # uses eol electron, install from flathub
     syncthing
     pkgs.mediawriter
     # pkgs.rpi-imager

@@ -50,10 +50,6 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  nixpkgs.config.permittedInsecurePackages = [
-    "electron-35.7.5"
-  ];
-
   # automount disks
   fileSystems."/home/jamesyoung/Extra-Storage-01" = {
     device = "/dev/disk/by-label/JamesStorage";
