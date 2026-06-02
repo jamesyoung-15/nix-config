@@ -29,5 +29,6 @@
     # (pkgs.whitesur-icon-theme.override { themeVariants = ["purple" "nord"];})
     # paper-icon-theme
     pkgs.capitaine-cursors
+    kara
   ];
 }
