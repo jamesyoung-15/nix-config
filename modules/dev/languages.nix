@@ -19,8 +19,8 @@
     uv
 
     # node
-    nodePackages_latest.nodejs
-    nodePackages.serve
+    nodejs
+    serve
 
     # php
     php
