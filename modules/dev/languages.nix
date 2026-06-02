@@ -35,7 +35,7 @@
     ansible-lint
 
     # others
-    nixfmt-rfc-style
+    nixfmt
     nixfmt-tree
     nix-tree
     texliveFull
