@@ -11,6 +11,7 @@
     # llm tools
     opencode
     claude-code
+    llama-cpp
 
     # other
     bruno
