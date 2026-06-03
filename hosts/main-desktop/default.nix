@@ -44,6 +44,7 @@
     ];
     packages = with pkgs; [
       teamviewer
+      rocmPackages.amdsmi
     ];
   };
 
