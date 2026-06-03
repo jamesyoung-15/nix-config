@@ -50,6 +50,12 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+  # environment variables
+  environment.variables = {
+    HSA_OVERRIDE_GFX_VERSION = "10.3.0"; # workaround for rdna2
+    ROCR_VISIBLE_DEVICES = "0"; # ensure only AMD GPU used not iGPU
+  };
+
   # automount disks
   fileSystems."/home/jamesyoung/Extra-Storage-01" = {
     device = "/dev/disk/by-label/JamesStorage";
