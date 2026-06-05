@@ -30,7 +30,7 @@ A list of some of my favourite tools, not really including dev stuff like Docker
 
 ## Commonly Used CLI Tools
 
-- neofetch (display system info)
+- fastfetch (display system info)
 - starship (bash prompt)
 - tldr (simplify man pages)
 - tmux (terminal multiplexer)

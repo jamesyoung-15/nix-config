@@ -50,3 +50,9 @@ running `python -c 'import fastapi; print(fastapi.__version__)'` errored out wit
 Turns out upon inspection that `python` was using `python 3.12`, whereas I downloaded packages for `python 3.13`, running `python -c 'import fastapi; print(fastapi.__version__)'` fixed the error. 
 
 Not sure why I have this issue, so my fix right now is to just set alias of `python` and `python3` to `python3.13`.
+
+### VS Code
+
+For VS Code, I am using `vscode.fhs`, which wraps VS Code in a buildFHSEnv sandbox (fake standard Linux filesystem). Main reason for this is for extensions like `ms-python.python`, `ms-vscode.cpptools`, etc. that require native binaries or bundled runtimes. Using regular `vscode` + `nix-ld` probably fixes most extensions except for extensions like `ms-vscode.cpptools` that need libraries like `glibc` and expects them at standard paths, `vscode.fhs` gives easiest solution out-of-the-box for me.
+
+Downside of `vscode.fhs` is it spawns VS Code inside namespace/chroot, so can have weird behaviour for using terminal inside VS Code and may need to use regular terminal for certain commands.
