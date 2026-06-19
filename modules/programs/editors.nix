@@ -11,6 +11,10 @@
     # office
     libreoffice
 
-    vscode.fhs
+    vscode.fhsWithPackages (ps: with ps; [
+      gnumake
+      gcc
+      pkg-config
+    ]))
   ];
 }
