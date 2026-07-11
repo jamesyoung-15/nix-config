@@ -8,14 +8,16 @@
   };
 
   environment.systemPackages = with pkgs; [
-    runelite
-    cemu
+    heroic
     lutris
-    retroarch
-    fusee-nano
+    cemu
+    eden
+    # retroarch
+    runelite
 
     mangohud
     goverlay
+    fusee-nano
     winetricks
     wineWow64Packages.stable
   ];
