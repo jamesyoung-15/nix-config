@@ -6,6 +6,7 @@
     mpv
     clementine
     libvlc
+    pa-dlna
 
     # media editors
     tenacity
