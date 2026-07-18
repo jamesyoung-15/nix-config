@@ -6,7 +6,6 @@
     mpv
     clementine
     libvlc
-    pa-dlna
     pulseaudio
 
     # media editors
