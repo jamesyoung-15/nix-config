@@ -51,4 +51,7 @@
       };
     };
   };
+
+  # needed for airplay/raop service discovery
+  services.avahi.enable = true;
 }
