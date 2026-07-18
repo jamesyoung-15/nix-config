@@ -32,5 +32,23 @@
 
     # If you want to use JACK applications, uncomment this
     jack.enable = true;
+
+
+    # AirPlay/RAOP config
+    raopOpenFirewall = true; # opens UDP ports 6001-6002
+    extraConfig.pipewire = {
+      "10-airplay" = {
+        "context.modules" = [
+          {
+            name = "libpipewire-module-raop-discover";
+
+            # increase the buffer size if you get dropouts/glitches
+            # args = {
+            #   "raop.latency.ms" = 500;
+            # };
+          }
+        ];
+      }
+    }
   };
 }
