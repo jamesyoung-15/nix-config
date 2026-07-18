@@ -115,6 +115,26 @@
       "L+    /opt/rocm   -    -    -     -    ${rocmEnv}"
     ];
 
+  # AirPlay/RAOP config
+  services.pipewire.raopOpenFirewall = true; # opens UDP ports 6001-6002
+  services.pipewire.extraConfig.pipewire = {
+    "10-airplay" = {
+      "context.modules" = [
+        {
+          name = "libpipewire-module-raop-discover";
+
+          # increase the buffer size if you get dropouts/glitches
+          # args = {
+          #   "raop.latency.ms" = 500;
+          # };
+        }
+      ];
+    };
+  };
+
+  # needed for airplay/raop service discovery
+  services.avahi.enable = true;
+
   # temp add teamviewer
   services.teamviewer.enable = true;
 
