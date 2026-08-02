@@ -43,6 +43,7 @@
     texliveFull
     pandoc
     yamlfmt
+    yamllint
     prettier
   ];
 }
