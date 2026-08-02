@@ -11,6 +11,8 @@
     pre-commit
     delta
     age
+    gnupg
+    pinentry-tty
     sops
     gitleaks
     jq
