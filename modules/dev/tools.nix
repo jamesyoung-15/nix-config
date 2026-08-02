@@ -10,6 +10,7 @@
     localstack # local aws stack
     pre-commit
     delta
+    age
     sops
     gitleaks
     jq
