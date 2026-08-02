@@ -28,9 +28,11 @@
     # iac
     terraform
     terraform-ls
-    vault-bin
-    pulumi-bin
     opentofu
+    tofu-ls
+    tflint
+    # vault-bin
+    # pulumi-bin
     ansible
     ansible-lint
 
