@@ -12,6 +12,7 @@
     opencode
     claude-code
     llama-cpp
+    pi-coding-agent
 
     # other
     bruno
