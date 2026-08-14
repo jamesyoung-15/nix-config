@@ -32,5 +32,8 @@
     pkgs.krename
     rustdesk
     scrcpy
+
+    # others
+    espeak-ng
   ];
 }
