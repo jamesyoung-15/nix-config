@@ -3,7 +3,6 @@
   environment.systemPackages = with pkgs; [
     # dev tools
     jupyter
-    gh
     awscli2
     google-cloud-sdk
     act # local github actions

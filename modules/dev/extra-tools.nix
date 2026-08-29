@@ -15,6 +15,8 @@
     pi-coding-agent
 
     # other
+    gh
+    glab
     bruno
     tesseract
     clinfo
