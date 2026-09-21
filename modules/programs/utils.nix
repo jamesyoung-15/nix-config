@@ -17,6 +17,7 @@
     rt-tests
     stress-ng
     sysbench
+    proton-pass-cli
     # phoronix-test-suite
 
     # gui tools
@@ -26,6 +27,8 @@
     gnome-disk-utility
     piper
     # bitwarden-desktop # uses eol electron, install from flathub
+    keepassxc
+    proton-pass
     syncthing
     pkgs.mediawriter
     # pkgs.rpi-imager
