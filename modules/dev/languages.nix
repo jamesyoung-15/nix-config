@@ -7,6 +7,7 @@
     go
     gopls
     golangci-lint
+    delve
     typescript
     # python
     (python313.withPackages (python-pkgs: [
