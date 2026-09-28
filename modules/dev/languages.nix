@@ -5,6 +5,8 @@
     jdk
     rustc
     go
+    gopls
+    golangci-lint
     typescript
     # python
     (python313.withPackages (python-pkgs: [
