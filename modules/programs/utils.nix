@@ -11,6 +11,7 @@
     nnn
     ydotool
     android-tools
+    go-task
 
     # benchmarking tools
     speedtest-cli
