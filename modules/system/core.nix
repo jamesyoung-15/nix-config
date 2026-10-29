@@ -68,6 +68,8 @@
     htop
     btop
     lm_sensors
+    smartmontools
+    nvme-cli
 
     # networking tools
     nmap
