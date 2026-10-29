@@ -34,7 +34,7 @@
     pkgs.mediawriter
     # pkgs.rpi-imager
     pkgs.krename
-    rustdesk
+    # rustdesk
     scrcpy
 
     # others
