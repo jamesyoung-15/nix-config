@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=https://taskfile.dev/schema.json
+
+version: '3'
+
+vars:
+  DESKTOP_HOSTNAME: "JamesNixMainDesktop"
+  FRAMEWORK13_HOSTNAME: "JamesNixFW13"
+
+tasks:
+  update:
+    desc: Update nix flake
+    cmds:
+      - nix flake update
+    silent: true
+
+  build-desktop:
+    desc: Build and apply nix config for desktop
+    preconditions:
+      - sh: '[ "$(hostname)" = "{{.DESKTOP_HOSTNAME}}" ]'
+    cmds:
+      - sudo nixos-rebuild switch --flake .#main-desktop
+    silent: true
+  
+  build-fw13:
+    desc: Build and apply nix config for framework-13
+    preconditions:
+      - sh: '[ "$(hostname)" = "{{.FRAMEWORK13_HOSTNAME}}" ]'
+    cmds:
+      - sudo nixos-rebuild switch --flake .#framework-13
+    silent: true
+
+  garbage-cleanup:
+    desc: Run nix garbage collect
+    cmds:
+      - sudo nix-collect-garbage --delete-older-than 14d
+    silent: true
