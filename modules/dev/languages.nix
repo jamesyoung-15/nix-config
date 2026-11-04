@@ -19,7 +19,7 @@
     pylint
     black
     ruff
-    uv
+    pkgs.unstable.uv
 
     # node
     nodejs
