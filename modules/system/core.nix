@@ -54,6 +54,11 @@
     fd
     fzf
 
+    # neovim build deps (treesitter parsers, telescope-fzf-native)
+    gcc
+    gnumake
+    tree-sitter
+
     # file utils
     killall
     findutils
