@@ -103,4 +103,4 @@ I know ideally for local configs I should be using home manager to declare the c
 - Improve organization of modules
 - Move more global system packages to home manager (most don't need to be global)
 - MacOS support in case I want/have to use Mac in future
-- More template nix-shells for work/dev
+- More dev shell templates (templates/) for work/dev

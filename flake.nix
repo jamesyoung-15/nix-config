@@ -42,6 +42,34 @@
       };
     in
     {
+      # Dev shell templates: `nix flake init -t ~/dev/nix-config#python`
+      templates = {
+        c-cpp = {
+          path = ./templates/c-cpp;
+          description = "C/C++ dev shell (gcc, clang, cmake, gdb, common libs)";
+        };
+        java = {
+          path = ./templates/java;
+          description = "Java dev shell (default JDK, JAVA_HOME set)";
+        };
+        php = {
+          path = ./templates/php;
+          description = "PHP dev shell (composer, symfony-cli)";
+        };
+        playwright = {
+          path = ./templates/playwright;
+          description = "Python + Playwright dev shell with Nix-provided browsers";
+        };
+        python = {
+          path = ./templates/python;
+          description = "Python 3.13 dev shell";
+        };
+        python-pytorch = {
+          path = ./templates/python-pytorch;
+          description = "Python 3.12 + PyTorch (ROCm) dev shell";
+        };
+      };
+
       nixosConfigurations = {
         main-desktop = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
