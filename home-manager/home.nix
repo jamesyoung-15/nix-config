@@ -10,6 +10,7 @@
     inherit username;
     homeDirectory = "/home/${username}";
     stateVersion = "25.05";
+    sessionPath = [ "$HOME/.local/bin" ];
   };
 
   home.packages = with pkgs; [
