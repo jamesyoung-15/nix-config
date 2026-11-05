@@ -58,6 +58,7 @@
     gcc
     gnumake
     tree-sitter
+    unzip
 
     # file utils
     killall
