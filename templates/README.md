@@ -19,3 +19,15 @@ nix develop
 List available templates with `nix flake show ~/dev/nix-config`.
 
 Note: in a git repo, `flake.nix` must be `git add`ed before `nix develop` can see it.
+
+## Large shells (e.g. python-pytorch)
+
+A plain `nix develop` shell isn't protected from garbage collection, so
+`task garbage-cleanup` will delete it and the next run re-downloads everything
+(several GB for ROCm). Use a profile to protect the shell from GC:
+
+``` bash
+nix develop --profile .nix-profile
+```
+
+Add `.nix-profile*` to the project's `.gitignore`. Delete it to let the shell be collected.
