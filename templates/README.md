@@ -8,7 +8,7 @@ From inside a project directory:
 
 ``` bash
 # copy a template's flake.nix into the current directory
-nix flake init -t ~/dev/nix-config#python
+nix flake init -t ~/dev/configs/nix-config#python
 # or straight from GitHub
 nix flake init -t github:jamesyoung-15/nix-config#python
 
