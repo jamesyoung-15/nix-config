@@ -16,7 +16,7 @@ nix flake init -t github:jamesyoung-15/nix-config#python
 nix develop
 ```
 
-List available templates with `nix flake show ~/dev/nix-config`.
+List available templates with `nix flake show ~/dev/configs/nix-config`.
 
 Note: in a git repo, `flake.nix` must be `git add`ed before `nix develop` can see it.
 
