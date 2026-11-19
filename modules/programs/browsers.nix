@@ -5,7 +5,7 @@
 
   environment.systemPackages = with pkgs; [
     firefox-bin
-    librewolf
+    # librewolf-bin
     ungoogled-chromium
   ];
 }
