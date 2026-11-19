@@ -16,8 +16,6 @@
       python-pkgs.pytest
       python-pkgs.requests
     ]))
-    pylint
-    black
     ruff
     pkgs.unstable.uv
 
