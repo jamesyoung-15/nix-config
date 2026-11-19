@@ -23,9 +23,6 @@
     nodejs
     serve
 
-    # php
-    php
-
     # iac
     terraform
     terraform-ls
