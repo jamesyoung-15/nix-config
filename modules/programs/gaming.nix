@@ -14,6 +14,7 @@
     eden
     # retroarch
     runelite
+    bolt-launcher
 
     mangohud
     goverlay
