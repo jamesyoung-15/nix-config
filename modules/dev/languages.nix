@@ -10,7 +10,7 @@
     delve
     typescript
     # python
-    (python313.withPackages (python-pkgs: [
+    (python314.withPackages (python-pkgs: [
       python-pkgs.pip
       python-pkgs.ipykernel
       python-pkgs.pytest

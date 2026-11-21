@@ -16,7 +16,7 @@
       devShells = forAllSystems (
         pkgs:
         let
-          pythonEnv = pkgs.python313.withPackages (ps: [ ]);
+          pythonEnv = pkgs.python314.withPackages (ps: [ ]);
         in
         {
           default = pkgs.mkShell {
