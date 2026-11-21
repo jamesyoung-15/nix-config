@@ -5,7 +5,7 @@
     awscli2
     google-cloud-sdk
     act # local github actions
-    localstack # local aws stack
+    # localstack # local aws stack
     pre-commit
     delta
     age
