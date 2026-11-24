@@ -13,7 +13,7 @@
       devShells = forAllSystems (
         pkgs:
         let
-          pythonEnv = pkgs.python312.withPackages (ps: [
+          pythonEnv = pkgs.python314.withPackages (ps: [
             ps.torchWithRocm
             (ps.torchvision.override { torch = ps.torchWithRocm; })
             (ps.torchaudio.override { torch = ps.torchWithRocm; })

@@ -62,11 +62,11 @@
         };
         python = {
           path = ./templates/python;
-          description = "Python 3.13 dev shell";
+          description = "Python 3.14 dev shell";
         };
         python-pytorch = {
           path = ./templates/python-pytorch;
-          description = "Python 3.12 + PyTorch (ROCm) dev shell";
+          description = "Python 3.14 + PyTorch (ROCm) dev shell";
         };
       };
 
