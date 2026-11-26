@@ -36,6 +36,7 @@
     pkgs.krename
     # rustdesk
     scrcpy
+    thunderbird-bin
 
     # others
     espeak-ng
